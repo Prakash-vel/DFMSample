@@ -66,6 +66,30 @@ class MainActivity : AppCompatActivity() {
                     SplitInstallSessionStatus.INSTALLED -> {
                         Log.i(tag, "install: installed")
                     }
+                    SplitInstallSessionStatus.CANCELED -> {
+                        Log.i(tag, "install: cancelled")
+                    }
+                    SplitInstallSessionStatus.CANCELING -> {
+                        Log.i(tag, "install: cancelling")
+                    }
+                    SplitInstallSessionStatus.DOWNLOADED -> {
+                        Log.i(tag, "install: downloaded")
+                    }
+                    SplitInstallSessionStatus.FAILED -> {
+                        Log.i(tag, "install: failed")
+                    }
+                    SplitInstallSessionStatus.INSTALLING -> {
+                        Log.i(tag, "install: installing")
+                    }
+                    SplitInstallSessionStatus.PENDING -> {
+                        Log.i(tag, "install: pending")
+                    }
+                    SplitInstallSessionStatus.REQUIRES_USER_CONFIRMATION -> {
+                        Log.i(tag, "install: REQUIRES_USER_CONFIRMATION")
+                    }
+                    SplitInstallSessionStatus.UNKNOWN -> {
+                        Log.i(tag, "install: unknown")
+                    }
                 }
             }
         }
